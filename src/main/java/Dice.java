@@ -1,21 +1,16 @@
 public class Dice {
-
-    //int numberOfSides;
+    ////Create a Dice class that acts like a set of N random-tossed dies.
     private int numberOfDie;
-    //Create a Dice class that acts like a set of N random-tossed dies.
 
     //https://www.w3schools.com/java/java_constructors.asp
-    // //create a dice instance with a dice constructor
+    //create a dice instance with a dice constructor
     public Dice(int x) {
         this.numberOfDie = x;
     }
-//    public Dice(int x, int y){
-//
-//    }
 
     // //roll the die
     public int roll(){
-        return    (int) (6.0 * Math.random() + 1);
+        return (int) (6.0 * Math.random() + 1);
     }
 
     public Integer tossAndSum(){
@@ -25,5 +20,4 @@ public class Dice {
         }
         return sum;
     }
-
 }
